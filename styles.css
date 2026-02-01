@@ -20,30 +20,30 @@ body {
 
 .header-row{
   display: flex;
-  align-items: flex-start;      /* keep photo up top */
-  justify-content: space-between;
+  align-items: center;           /* aligns name and photo vertically */
+  justify-content: space-between;/* pushes photo to the right */
   gap: 20px;
 }
 
+.header-left h1{
+  margin: 0 0 6px;
+}
+
 .headshot{
-  width: 140px;                 /* adjust size */
-  height: 140px;
+  width: 110px;                  /* adjust size */
+  height: 110px;
   object-fit: cover;
-  border-radius: 14px;          /* rounded square; use 50% for circle */
+  border-radius: 14px;           /* use 50% for circle */
   border: 1px solid rgba(17, 24, 39, 0.12);
 }
 
 @media (max-width: 700px){
   .header-row{
-    flex-direction: column-reverse; /* photo goes above or below; change as you like */
-    align-items: center;
+    flex-direction: column;
     text-align: center;
   }
-  .headshot{
-    width: 160px;
-    height: 160px;
-  }
 }
+
 
 .container {
   width: min(var(--maxw), calc(100% - 32px));
