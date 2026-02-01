@@ -18,6 +18,20 @@ body {
   line-height: 1.6;
 }
 
+.header-row{
+  display: flex;
+  align-items: flex-start;      /* keep photo up top */
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.headshot{
+  width: 140px;                 /* adjust size */
+  height: 140px;
+  object-fit: cover;
+  border-radius: 14px;          /* rounded square; use 50% for circle */
+  border: 1px solid rgba(17, 24, 39, 0.12);
+}
 
 .container {
   width: min(var(--maxw), calc(100% - 32px));
