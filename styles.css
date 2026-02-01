@@ -33,6 +33,18 @@ body {
   border: 1px solid rgba(17, 24, 39, 0.12);
 }
 
+@media (max-width: 700px){
+  .header-row{
+    flex-direction: column-reverse; /* photo goes above or below; change as you like */
+    align-items: center;
+    text-align: center;
+  }
+  .headshot{
+    width: 160px;
+    height: 160px;
+  }
+}
+
 .container {
   width: min(var(--maxw), calc(100% - 32px));
   margin: 0 auto;
