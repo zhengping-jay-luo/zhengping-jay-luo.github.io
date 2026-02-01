@@ -44,6 +44,9 @@ body {
   }
 }
 
+.big-indent {
+  padding-left: 40px;
+}
 
 .container {
   width: min(var(--maxw), calc(100% - 32px));
