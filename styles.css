@@ -30,8 +30,8 @@ body {
 }
 
 .headshot{
-  width: 110px;                  /* adjust size */
-  height: 110px;
+  width: 130px;                  /* adjust size */
+  height: 130px;
   object-fit: cover;
   border-radius: 14px;           /* use 50% for circle */
   border: 1px solid rgba(17, 24, 39, 0.12);
