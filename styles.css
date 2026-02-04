@@ -81,6 +81,7 @@ main { padding: 10px 0 36px; }
 
 
 h2 { margin-top: 0; font-size: 1.25rem; }
+h3 { margin-top: 0; font-size: 0.8rem; }
 
 a { color: var(--accent); }
 ul { padding-left: 18px; }
