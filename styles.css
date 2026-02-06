@@ -90,3 +90,48 @@ ul { padding-left: 18px; }
   padding: 18px 0 40px;
   color: var(--muted);
 }
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+th, td {
+  border: 1px solid #000;
+  padding: 8px;
+  vertical-align: top;
+  text-align: left;
+  word-wrap: break-word;
+  white-space: normal;
+}
+th {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.step-title {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.note {
+  font-weight: bold;
+}
