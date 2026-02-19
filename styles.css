@@ -48,6 +48,26 @@ body {
     flex-direction: column;
     text-align: center;
   }
+  
+  h1 { font-size: 1.6rem; }
+  .subtitle { font-size: 0.9rem; }
+  
+  .nav {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin: 10px 0;
+  }
+  
+  .btn {
+    padding: 12px 10px;
+    font-size: 0.9rem;
+  }
+  
+  .headshot {
+    width: auto;
+    height: 100px;
+    margin-top: 15px;
+  }
 }
 
 .big-indent {
