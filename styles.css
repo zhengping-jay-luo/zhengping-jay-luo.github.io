@@ -18,40 +18,76 @@ body {
   line-height: 1.6;
 }
 
-.header-row{
-  display: flex;
-  align-items: flex-start;       /* align photo with the top of title */
-  justify-content: space-between;/* pushes photo to the right */
-  gap: 20px;
-  padding-top: 0;
+header {
+  padding: 48px 0 20px;
+}
+
+h1 { margin: 0 0 6px; font-size: 2.2rem; }
+.subtitle { 
+  margin: 0 0 16px; 
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.big-indent {
+  padding-left: 40px;
+}
+
+.container {
+  width: min(var(--maxw), calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.header-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.header-table td {
+  border: none;
+  padding: 0;
+  vertical-align: top;
 }
 
 .header-left {
-  flex: 1;
+  width: 100%;
 }
 
-.header-left h1{
-  margin: 0 0 6px;
+.header-right {
+  padding-left: 20px;
+  text-align: center;
 }
 
 .headshot{
   width: 132px;                  /* 110% of 120px */
-  height: 141px;                 /* 110% of 128px */
-  margin-top: 25px;              /* push picture down below title */
+  height: auto;
+  aspect-ratio: 132 / 141;       /* maintain aspect ratio */
   object-fit: cover;
   border-radius: 14px;           /* use 50% for circle */
   border: 1px solid rgba(17, 24, 39, 0.12);
 }
 
 @media (max-width: 700px){
-  .header-row{
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-  
   h1 { font-size: 1.6rem; }
   .subtitle { font-size: 0.9rem; }
+  
+  .header-table {
+    margin-top: 10px;
+  }
+  
+  .header-table td {
+    display: block;
+    width: 100%;
+    padding: 0 !important;
+    text-align: center;
+  }
+  
+  .header-right {
+    padding-left: 0 !important;
+    padding-top: 15px;
+  }
   
   .nav {
     grid-template-columns: 1fr;
@@ -71,25 +107,8 @@ body {
   .headshot {
     width: auto;
     height: 100px;
-    margin-top: 15px;
   }
 }
-
-.big-indent {
-  padding-left: 40px;
-}
-
-.container {
-  width: min(var(--maxw), calc(100% - 32px));
-  margin: 0 auto;
-}
-
-header {
-  padding: 48px 0 20px;
-}
-
-h1 { margin: 0 0 6px; font-size: 2.2rem; }
-.subtitle { margin: 0 0 16px; color: var(--muted); }
 
 .nav {
   display: grid;
