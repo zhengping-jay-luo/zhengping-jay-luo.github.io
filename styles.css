@@ -110,8 +110,9 @@ h1 {
 
 .nav {
   display: grid;
-  grid-template-columns: 0.8fr 1.4fr 1fr 0.9fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+  width: 100%;
 }
 
 .nav a {
