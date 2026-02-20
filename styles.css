@@ -20,7 +20,7 @@ body {
 
 .header-row{
   display: flex;
-  align-items: flex-start;       /* align photo with the top of subtitle */
+  align-items: center;           /* center image with content */
   justify-content: space-between;/* pushes photo to the right */
   gap: 20px;
   padding-top: 27px;             /* align with subtitle top */
