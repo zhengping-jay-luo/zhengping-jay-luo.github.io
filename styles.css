@@ -47,6 +47,7 @@ body {
   .header-row{
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
   
   h1 { font-size: 1.6rem; }
