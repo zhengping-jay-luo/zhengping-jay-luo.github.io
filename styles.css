@@ -109,10 +109,13 @@ h1 {
   }
 }
 
+
 .nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  display: flex;
+  flex: 1;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nav a {
@@ -126,6 +129,7 @@ h1 {
 .btn {
   background-color: #970a0a;
   color: white !important;
+  flex: 1;
   padding: 10px 2px;
   border-radius: 8px;
   text-decoration: none !important;
