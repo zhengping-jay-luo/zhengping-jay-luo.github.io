@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+  <defs>
+    <style>
+      .box { fill:#ffffff; stroke:#111827; stroke-width:2; rx:14; }
+      .t { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; font-size:18px; fill:#111827; }
+      .hint { font-size:13px; fill:#6b7280; }
+      .arrow { stroke:#111827; stroke-width:2.5; marker-end:url(#m); }
+      a:hover .box { stroke:#2563eb; }
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L9,3 L0,6 Z" fill="#111827"/>
+    </marker>
+  </defs>
+
+  <!-- Arrow -->
+  <line x1="290" y1="110" x2="610" y2="110" class="arrow"/>
+
+  <!-- Node A -->
+  <a href="#node-a">
+    <g>
+      <rect x="120" y="70" width="170" height="80" class="box"/>
+      <text x="205" y="105" text-anchor="middle" class="t">A 数据采集</text>
+      <text x="205" y="130" text-anchor="middle" class="hint">点击看详情</text>
+    </g>
+  </a>
+
+  <!-- Node B -->
+  <a href="#node-b">
+    <g>
+      <rect x="610" y="70" width="170" height="80" class="box"/>
+      <text x="695" y="105" text-anchor="middle" class="t">B 特征工程</text>
+      <text x="695" y="130" text-anchor="middle" class="hint">点击看详情</text>
+    </g>
+  </a>
+</svg>
