@@ -126,6 +126,13 @@ h1 {
   text-align: center;
 }
 
+.pedagogy {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+  height: auto;
+}
+
 .btn {
   background-color: #970a0a;
   color: white !important;
