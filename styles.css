@@ -224,3 +224,18 @@ a:hover {
 .note {
   font-weight: bold;
 }
+
+details {
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+details[open] {
+  background-color: none;
+}
