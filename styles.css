@@ -278,3 +278,10 @@ summary {
 details[open] {
   background-color: none;
 }
+
+.question-banner {
+  background-color: #970a0a; 
+  color: white; 
+  padding: 12px; 
+  border-radius: 6px;
+}
