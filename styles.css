@@ -98,42 +98,21 @@ h1 {
     width: 100%;
   }
   
-  .button-group {
-    flex-direction: column;
-    gap: 10px;
-  }
-
   .btn {
-    padding: 12px 16px;
-    font-size: 0.95rem;
-    width: 100%;
+    padding: 12px 10px;
+    font-size: 0.9rem;
   }
   
   .headshot {
     width: auto;
     height: 100px;
   }
-
-  }
-
-
-.header-center {
-  margin: 0px 0 0px;
-  padding: 0px 0;
-  border-top: 1px solid rgba(113, 120, 140, 0.721);
-  border-bottom: 1px solid rgba(113, 120, 140, 0.721);
-}
-
-.header-center .nav {
-  width: 100%;
 }
 
 .nav {
-  display: flex;
-  flex: 1;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
 }
 
 .nav a {
@@ -144,38 +123,18 @@ h1 {
   text-align: center;
 }
 
-.pedagogy {
-  display: block;
-  margin: 0 auto;
-  max-width: 90%;
-  height: auto;
-}
-
-.button-group {
-  display: flex;
-  gap: 12px;
-  margin: 24px 0;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .btn {
   background-color: #970a0a;
   color: white !important;
-  padding: 12px 24px;
+  padding: 10px 16px;
   border-radius: 8px;
   text-decoration: none !important;
   font-weight: 500;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  display: inline-block;
-  text-align: center;
-  border: none;
-  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .btn:hover {
   background-color: #7a0808;
   text-decoration: none !important;
-  transform: translateY(-2px);
 }
 
 main { padding: 10px 0 36px; }
@@ -198,6 +157,19 @@ main { padding: 10px 0 36px; }
   text-align: center;
 }
 
+.card summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.card summary::-webkit-details-marker {
+  display: none;
+}
+
+.card summary::marker {
+  content: "";
+}
+
 h2 { margin-top: 0; text-align: center;font-size: 1.25rem; }
 h3 { margin-top: 0; margin-left: 0.6cm; font-size: 1rem; }
 
@@ -208,15 +180,6 @@ ul { padding-left: 18px; }
   padding: 18px 0 40px;
   color: var(--muted);
   text-align: center;
-}
-
-#latest {
-  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
-  border: 1px solid #fcd34d;
-}
-
-#main {
-  background: var(--card);
 }
 
 
@@ -264,24 +227,5 @@ a:hover {
   font-weight: bold;
 }
 
-details {
-  border-radius: 8px;
-  padding: 10px;
-  margin: 10px 0;
-}
 
-summary {
-  font-weight: bold;
-  cursor: pointer;
-}
 
-details[open] {
-  background-color: none;
-}
-
-.question-banner {
-  background-color: #970a0a; 
-  color: white; 
-  padding: 12px; 
-  border-radius: 6px;
-}
