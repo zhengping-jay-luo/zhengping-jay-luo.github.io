@@ -157,19 +157,6 @@ main { padding: 10px 0 36px; }
   text-align: center;
 }
 
-.card summary {
-  cursor: pointer;
-  list-style: none;
-}
-
-.card summary::-webkit-details-marker {
-  display: none;
-}
-
-.card summary::marker {
-  content: "";
-}
-
 h2 { margin-top: 0; text-align: center;font-size: 1.25rem; }
 h3 { margin-top: 0; margin-left: 0.6cm; font-size: 1rem; }
 
