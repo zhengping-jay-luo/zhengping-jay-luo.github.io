@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quantum Computing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<body>
+  <header class="container">
+    <p style="text-align: left;"><a href="index.html" >Back to Homepage</a></p>
+    <div class="header-center">
+      <h1 style="text-align: center;">Quantum Computing</h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="overview" class="card">
+      <h2>Overview</h2>
+      <p>
+        Quantum computing is a type of computing that uses quantum bits (qubits) instead of classical bits (0 or 1). Qubits can exist in multiple states simultaneously, allowing for parallel computation and potentially solving certain problems much faster than classical computers.
+      </p>
+      <ul class="nav-links">
+        <li><a href="https://quantum-computing.ibm.com/">IBM Quantum Experience</a></li>
+        <li><a href="https://qiskit.org/">Qiskit</a></li>
+        <li><a href="https://github.com/Entanglion/entanglion">Entanglion</a>: An Open-source board game to learn the fundamental ideas and mechanics of quantum computing.</li>
+        <li>Textbook: <a href="files/introduction-to-classical-and-quantum-computing-1e4p.pdf" target="_blank">Introduction to Classical and Quantum Computing</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <small>© <span id="year"></span> Zhengping Jay Luo </small>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
